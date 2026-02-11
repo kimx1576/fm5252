@@ -10,7 +10,7 @@ This repository contains coursework and assignments for FM 5252.
 
 This repo includes homework assignments and projects related to financial modeling and quantitative analysis.
 
-### Black-Scholes Option Pricing Model
+### Black-Scholes Option Pricing Model - Project 1
 
 Implementation of the Black-Scholes model for European options pricing with Greeks calculations.
 
@@ -20,9 +20,4 @@ Implementation of the Black-Scholes model for European options pricing with Gree
 - Interactive visualizations using Plotly
 - Supports both scalar and vector inputs
 
-**Files:**
-- `black_scholes.py` - Main implementation with lambda functions and visualization
 
-**Requirements:**
-```bash
-pip install numpy scipy plotly
