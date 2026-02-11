@@ -151,9 +151,10 @@ if __name__ == "__main__":
     print("Plot 5 done")
     
     
-    # Sample calculations
+    # Sample calculations for validation 
+
     print("\n" + "="*60)
-    print("Sample calculations:")
+    print("Sample calculations for validation:")
     s_test = 100
     T_test = 1.0
     print(f"S={s_test}, K={k}, T={T_test}, r={r}, sigma={sigma}")
