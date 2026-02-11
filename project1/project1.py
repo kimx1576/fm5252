@@ -62,8 +62,8 @@ if __name__ == "__main__":
     S = np.linspace(80, 220, 110)
     
     # Plot 1: Call option prices with different maturities
-    print("Generating plots...")
-    data1 = []
+    
+    data1=[]
     for i in range(2, 11, 2):
         T = i
         Z = np.array([call_price(s, k, r, sigma, T) for s in S])
@@ -76,11 +76,10 @@ if __name__ == "__main__":
                        yaxis=dict(title='Option Value'))
     fig1 = dict(data=data1, layout=layout)
     plot(fig1, filename='plot1_call_maturity.html')
-    print("Plot 1 done")
     
     
     # Plot 2: Gamma with shorter maturities
-    data2 = []
+    data2=[]
     for i in range(1, 11, 2):
         T = i / 10
         Z = np.array([gamma(s, k, r, sigma, T) for s in S])
@@ -93,7 +92,6 @@ if __name__ == "__main__":
                        yaxis=dict(title='Gamma'))
     fig2 = dict(data=data2, layout=layout)
     plot(fig2, filename='plot2_gamma.html')
-    print("Plot 2 done")
     
     
     # Plot 3: Delta comparison between call and put
@@ -110,14 +108,13 @@ if __name__ == "__main__":
                        yaxis=dict(title='Delta'))
     fig3 = dict(data=[trace1, trace2], layout=layout)
     plot(fig3, filename='plot3_delta.html')
-    print("Plot 3 done")
     
     
     # Plot 4: Vega across different volatilities
     sigma_range = np.linspace(0.1, 0.5, 100)
     s_val = 100
     
-    data4 = []
+    data4=[]
     for mat in [0.5, 1.0, 1.5, 2.0]:
         vega_vals = np.array([vega(s_val, k, r, sig, mat) for sig in sigma_range])
         trace = go.Scatter(x=sigma_range*100, y=vega_vals, name=f'T={mat}')
@@ -129,7 +126,6 @@ if __name__ == "__main__":
                        yaxis=dict(title='Vega'))
     fig4 = dict(data=data4, layout=layout)
     plot(fig4, filename='plot4_vega.html')
-    print("Plot 4 done")
     
     
     # Plot 5: Theta decay
@@ -148,17 +144,14 @@ if __name__ == "__main__":
                        yaxis=dict(title='Theta'))
     fig5 = dict(data=[trace1, trace2], layout=layout)
     plot(fig5, filename='plot5_theta.html')
-    print("Plot 5 done")
     
     
     # Sample calculations for validation 
 
-    print("\n" + "="*60)
-    print("Sample calculations for validation:")
+    print("\nSample calculations for validation:")
     s_test = 100
     T_test = 1.0
     print(f"S={s_test}, K={k}, T={T_test}, r={r}, sigma={sigma}")
-    print("-"*60)
     print(f"Call Price: {call_price(s_test, k, r, sigma, T_test):.4f}")
     print(f"Put Price: {put_price(s_test, k, r, sigma, T_test):.4f}")
     print(f"Call Delta: {call_delta(s_test, k, r, sigma, T_test):.4f}")
@@ -169,4 +162,3 @@ if __name__ == "__main__":
     print(f"Put Theta: {put_theta(s_test, k, r, sigma, T_test):.4f}")
     print(f"Call Rho: {call_rho(s_test, k, r, sigma, T_test):.4f}")
     print(f"Put Rho: {put_rho(s_test, k, r, sigma, T_test):.4f}")
-    print("="*60)
