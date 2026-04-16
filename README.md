@@ -77,5 +77,43 @@ where x = log(K/F) and w = IV^2 * T.
 
 The script finds the five parameters (a, b, rho, m, sigma) that best fit the data using least-squares optimization, then plots the result.
 
+# Project 4
+
+Normal random number generator in C#.
+
+Three methods to generate standard normal values:
+- Sum of Twelve (CLT approximation)
+- Box-Muller transform
+- Polar rejection (Marsaglia)
+
+Also does correlated normal pairs using Cholesky decomposition.
+User enters rho and picks which method to use.
+
+## How to run
+
+```
+cd project4
+dotnet run
+```
+
+# Project 5
+
+Monte Carlo European option pricer in C#.
+
+Simulates stock price paths using geometric Brownian motion (GBM) and
+prices European call and put options. Also computes Greeks by bumping
+parameters and re-simulating.
+
+## Files
+
+- Program.cs - user input and output
+- MoneCarloEngine.cs - simulation and Greeks computation
+- OptionParameters.cs - holds input parameters
+- OptionResult.cs - holds prices and Greeks
+
+## Greeks computed
+
+Delta, Gamma, Vega, Theta, Rho (all via finite differences)
+
 
 
