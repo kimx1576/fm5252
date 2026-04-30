@@ -116,4 +116,21 @@ parameters and re-simulating.
 Delta, Gamma, Vega, Theta, Rho (all via finite differences)
 
 
+## Project 6: Monte Carlo Simulator with Variance Reduction
 
+This is a C# console application that prices European options using Monte Carlo simulation. For this phase of the project, I implemented antithetic variance reduction and Van der Corput sequences.
+
+### Features Included
+* **Standard Monte Carlo:** Calculates the option price and standard error using pseudo-random numbers.
+* **Greeks:** Calculates Delta, Gamma, Vega, Rho, and Theta using finite difference methods (bumping the inputs on the same random paths).
+* **Antithetic Variates:** The user can choose whether or not to apply antithetic variance reduction. When enabled, it calculates the paths using `Z` and `-Z`, averages them, and cuts the simulation count in half to ensure the standard error is calculated correctly. It applies to both the price and the Greeks.
+* **Van der Corput Sequence:** Generates a 1D sequence based on a user-defined base to calculate the option price and Greeks. As specified in the assignment requirements, this runs on a fixed 10,000 simulations and does not calculate a standard error.
+
+### How to Run
+1. Navigate to the project folder in your terminal.
+2. Run the command `dotnet run`.
+3. Select from the main menu:
+   - `1` for Random Monte Carlo (will prompt for normal/antithetic choice).
+   - `2` for Van der Corput (will prompt for the base).
+   - `3` to Quit.
+4. Enter the option parameters (Spot, Strike, Time to maturity, Rate, Volatility, Call/Put) when prompted to view the results.
