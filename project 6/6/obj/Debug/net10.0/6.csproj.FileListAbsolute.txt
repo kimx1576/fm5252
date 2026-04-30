@@ -1,0 +1,14 @@
+/Users/dongsungkim/Desktop/FM5252/Projects/6/bin/Debug/net10.0/6
+/Users/dongsungkim/Desktop/FM5252/Projects/6/bin/Debug/net10.0/6.deps.json
+/Users/dongsungkim/Desktop/FM5252/Projects/6/bin/Debug/net10.0/6.runtimeconfig.json
+/Users/dongsungkim/Desktop/FM5252/Projects/6/bin/Debug/net10.0/6.dll
+/Users/dongsungkim/Desktop/FM5252/Projects/6/bin/Debug/net10.0/6.pdb
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.GeneratedMSBuildEditorConfig.editorconfig
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.AssemblyInfoInputs.cache
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.AssemblyInfo.cs
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.csproj.CoreCompileInputs.cache
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.dll
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/refint/6.dll
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.pdb
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/6.genruntimeconfig.cache
+/Users/dongsungkim/Desktop/FM5252/Projects/6/obj/Debug/net10.0/ref/6.dll
